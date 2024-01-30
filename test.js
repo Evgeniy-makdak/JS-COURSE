@@ -216,6 +216,7 @@
 //     tagName: "input",
 //     className: "paragraph",
 //     value: "12345",
+//     onChange(event => event.target.value) - способ обращения через слушатель событий, где target - сам DOM элемент, а value - значение в нём.
 //     ...
 //   }
 //                                                         * Ссылка: *
