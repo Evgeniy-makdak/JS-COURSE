@@ -1,4 +1,4 @@
-// const arr = [7, 13, 24, 0];
+const arr = [7, 13, 24, 0];
 // *******
 // 1 forEach - перебор каждого элемента массива;
 // const newArr1 = arr.forEach((item, index) => {
@@ -151,7 +151,6 @@
 // console.log(arr, arr.length);
 // *******
 // 25 метод for of - перебор значений массива (с возможностью мутировать их):
-
 // for (let value of arr) {
 //   console.log(value * 2);
 // }
@@ -159,13 +158,11 @@
 // 26 метод array.match(regexp)
 // Метод match() возвращает новый массив, содержащий все совпадения, найденные в исходном массиве.
 // Если совпадений не найдено, то метод возвращает null.
-
 // const numbers = [1, 2, 3, 4, 5];
 // const evenNumbers = numbers.match(/[02468]/g);
 // console.log(evenNumbers); // [2, 4]
 // *******
 // 27 Метод repeat() повторяет содержимое строки указанное количество раз.
-
 // let s = 's';
 // let multipliedString = s.repeat(3);
 // console.log(multipliedString);   // 'sss'
@@ -173,16 +170,19 @@
 // проверка на равенство с NaN:
 // console.log(Number.isNaN(0))      // false
 // console.log(Number.isNaN(NaN))   // true
-
 // *******
 // 28 Метод endsWith() определяет, заканчивается ли строка символами этой строки, возвращая true или false в зависимости от ситуации.
 // Этот метод чувствителен к регистру.
-
 // const str = "To be, or not to be, that is the question.";
 // console.log(str.endsWith("question.")); // true
 // console.log(str.endsWith("to be") ); // false
 // console.log(str.endsWith("to be", 19)); // 
-
+// *******
+// 29 Метод some() принимает функцию колбэк и возвращает true или false в зависимости от проверки условия, записанного в логике метода:
+// arr.some(num => console.log(num % 2 === 0));
+// arr.some(num => {
+//     if (num != 0 && num % 2 === 0) console.log(num);
+// });
 
 // *******
 // Преобразование типов:
@@ -419,3 +419,8 @@
 // console.log(words); // Output: ["I", "love", "Javascript"]
 
 //-----------------------------------------------------------------------//
+
+// Полезные сниппеты при работе с VS Code:
+
+// React:
+// rsc - создаёт шаблон нового компонента с уже вписанным в функцию и экспорт названием. 
