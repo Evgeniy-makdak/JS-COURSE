@@ -2844,6 +2844,7 @@
 // console.log(persistence(999));
 
 //                                    ****************************************
+// CW 4
 
 // Напишите функцию, которая на вход принимает строку или текст (это могут быть либо отдельные буквы, либо целые предложения),
 // а на выходе выводит массив с наиболее часто повторяющимися элементами. Если текст содержит менее трех уникальных слов,
@@ -2859,19 +2860,22 @@
 
 // --> ["won't", "wont"]
 
-const text = "wont won't won't"
+// const text = "  //wont won't won't "
 
-function topThreeWords(text) {
-  const textToArray = text.toLowerCase().split(' ');
-  let resArray = textToArray.reduce((acc, el) => {
-    if (el in acc) acc[el]++;
-    else acc[el] = 1;
-    return acc;
-  }, {});
-  return Object.entries(resArray).sort((a, b) => b[1] - a[1]).slice(0, 3).map(item => item[0]);
-}
+// function topThreeWords(text) {
+//   const cleanedText = text.replace(/[^\w\s']/g, ''); 
+//   const textToArray = cleanedText.toLowerCase().split(' ');
+//   let resArray = textToArray.reduce((acc, el) => {
+//     if (el !== '' && el !== "'") {
+//       if (el in acc) acc[el]++;
+//       else acc[el] = 1;
+//     }
+//     return acc;
+//   }, {});
+//   return Object.entries(resArray).sort((a, b) => b[1] - a[1]).slice(0, 3).map(item => item[0]);
+// }
 
-console.log(topThreeWords(text));
+// console.log(topThreeWords(text));
 
 //                                    ****************************************
 
