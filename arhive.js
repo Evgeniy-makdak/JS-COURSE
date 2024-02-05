@@ -2859,8 +2859,16 @@
 
 // --> ["won't", "wont"]
 
+const text = "wont won't won't"
+
 function topThreeWords(text) {
-  return [];
+  const textToArray = text.toLowerCase().split(' ');
+  let resArray = textToArray.reduce((acc, el) => {
+    if (el in acc) acc[el]++;
+    else acc[el] = 1;
+    return acc;
+  }, {});
+  return Object.entries(resArray).sort((a, b) => b[1] - a[1]).slice(0, 3).map(item => item[0]);
 }
 
 console.log(topThreeWords(text));
