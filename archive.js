@@ -2915,3 +2915,24 @@
 // }
 
 // console.log(unicArray(arr));
+
+//                                    ****************************************
+
+// Необходимо преобразовать исходную строку в строку, неачинающуюся с хэштега, с удалёнными пробелами. При этом первая буква каждого слова 
+// должна быть преобразована в заглавную. Если исходная строка содержит больше или равно 140 символов, то выводим false, если исходная строка пустая,
+// также выводим false:
+// " Hello there thanks for trying my Kata"  =>  "#HelloThereThanksForTryingMyKata"
+// "    Hello     World   "                  =>  "#HelloWorld"
+// ""                                        =>  false
+
+const str = "Codewars is nice"
+
+function generateHashtag (str) {
+  const capitalizedStr = str.replace(/\b\w/g, function(l) {
+    return l.toUpperCase();
+  });  
+  let trnslateString = '#' + capitalizedStr.trimStart().toUpperCase()[0] + capitalizedStr.split(' ').join('').slice(1)
+  return trnslateString;
+}
+
+console.log(generateHashtag(str));
