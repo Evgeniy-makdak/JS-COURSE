@@ -2925,14 +2925,38 @@
 // "    Hello     World   "                  =>  "#HelloWorld"
 // ""                                        =>  false
 
-const str = "Codewars is nice"
+// const str = "Codewars is nice"
 
-function generateHashtag (str) {
-  const capitalizedStr = str.replace(/\b\w/g, function(l) {
-    return l.toUpperCase();
-  });  
-  let trnslateString = '#' + capitalizedStr.trimStart().toUpperCase()[0] + capitalizedStr.split(' ').join('').slice(1)
-  return trnslateString;
-}
+// function generateHashtag (str) {
+//   const capitalizedStr = str.replace(/\b\w/g, function(l) {
+//     return l.toUpperCase();
+//   });  
+//   let trnslateString = '#' + capitalizedStr.trimStart().toUpperCase()[0] + capitalizedStr.split(' ').join('').slice(1)
+//   return trnslateString;
+// }
 
-console.log(generateHashtag(str));
+// console.log(generateHashtag(str));
+
+//                                    ****************************************
+
+// Напишите функцию, которая принимает строку из одного или нескольких слов и возвращает ту же строку, но с перевернутыми буквами в словах,
+// которые состоят из пяти или более букв. Передаваемые строки будут состоять только из букв и пробелов
+
+// Пример: 
+// spinWords("Hey fellow warriors")  // "Hey wollef sroirraw" 
+// spinWords("This is a test")       // "This is a test" 
+// spinWords("This is another test") // "This is rehtona test"
+
+// function spinWords(sentance) {
+//   let resArray = [];
+//   const sentanceToArray = sentance.split(' ');
+//   sentanceToArray.forEach(element => {
+//     if (element.length <= 5) {
+//       resArray.push(element);
+//     }
+//     else resArray.push(element.split('').reverse().join(''))
+//   });
+//   return resArray.join(' ');
+// };
+
+// console.log(spinWords("This is a test"));
