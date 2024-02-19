@@ -2990,3 +2990,23 @@
 // };
 
 // console.log(isPrime(sumArr));
+
+//                                    ****************************************
+
+// Необходимо преобразовать строку так, что бы каждое слово начиналось с большой буквы.
+
+const str = 'how can mirrors';
+
+// function toJadenCase(str) {
+//   let strToArr = str.split(' ');
+//   let upperArray = [];
+//   strToArr.forEach(element => {
+//     upperArray.push(element[0].toUpperCase() + element.slice(1)); 
+//   });
+//   return upperArray.join(' ')
+// }
+
+// console.log(toJadenCase(str));
+
+//                                    ****************************************
+
