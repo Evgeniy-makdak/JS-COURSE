@@ -2960,3 +2960,33 @@
 // };
 
 // console.log(spinWords("This is a test"));
+
+//                                    ****************************************
+
+// Задан список из n целых чисел, найдите минимальное число, которое нужно вставить в список, чтобы сумма всех элементов списка была 
+// равна ближайшему простому числу.
+
+// Пример:  
+// minimumNumber ([3, 1, 2]) // 1
+
+// const arr = [5, 4, 5];
+
+// const sumArr = arr.reduce((acc, el) => {
+//   return acc + el;
+// })
+
+// let vatNum = sumArr;
+
+// function isPrime(varNum) {
+//   let count = 0;
+//   for (let i = 1; i <= varNum; i++) {
+//     if (varNum % i === 0) {
+//       count++;
+//     };
+//   };
+//   if (count === 2) {
+//     return varNum - sumArr;
+//   } else return isPrime(varNum + 1);
+// };
+
+// console.log(isPrime(sumArr));
