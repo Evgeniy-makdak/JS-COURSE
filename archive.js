@@ -2863,7 +2863,7 @@
 // const text = "  //wont won't won't "
 
 // function topThreeWords(text) {
-//   const cleanedText = text.replace(/[^\w\s']/g, ''); 
+//   const cleanedText = text.replace(/[^\w\s']/g, '');
 //   const textToArray = cleanedText.toLowerCase().split(' ');
 //   let resArray = textToArray.reduce((acc, el) => {
 //     if (el !== '' && el !== "'") {
@@ -2918,7 +2918,7 @@
 
 //                                    ****************************************
 
-// Необходимо преобразовать исходную строку в строку, неачинающуюся с хэштега, с удалёнными пробелами. При этом первая буква каждого слова 
+// Необходимо преобразовать исходную строку в строку, неачинающуюся с хэштега, с удалёнными пробелами. При этом первая буква каждого слова
 // должна быть преобразована в заглавную. Если исходная строка содержит больше или равно 140 символов, то выводим false, если исходная строка пустая,
 // также выводим false:
 // " Hello there thanks for trying my Kata"  =>  "#HelloThereThanksForTryingMyKata"
@@ -2930,7 +2930,7 @@
 // function generateHashtag (str) {
 //   const capitalizedStr = str.replace(/\b\w/g, function(l) {
 //     return l.toUpperCase();
-//   });  
+//   });
 //   let trnslateString = '#' + capitalizedStr.trimStart().toUpperCase()[0] + capitalizedStr.split(' ').join('').slice(1)
 //   return trnslateString;
 // }
@@ -2942,9 +2942,9 @@
 // Напишите функцию, которая принимает строку из одного или нескольких слов и возвращает ту же строку, но с перевернутыми буквами в словах,
 // которые состоят из пяти или более букв. Передаваемые строки будут состоять только из букв и пробелов
 
-// Пример: 
-// spinWords("Hey fellow warriors")  // "Hey wollef sroirraw" 
-// spinWords("This is a test")       // "This is a test" 
+// Пример:
+// spinWords("Hey fellow warriors")  // "Hey wollef sroirraw"
+// spinWords("This is a test")       // "This is a test"
 // spinWords("This is another test") // "This is rehtona test"
 
 // function spinWords(sentance) {
@@ -2963,10 +2963,10 @@
 
 //                                    ****************************************
 
-// Задан список из n целых чисел, найдите минимальное число, которое нужно вставить в список, чтобы сумма всех элементов списка была 
+// Задан список из n целых чисел, найдите минимальное число, которое нужно вставить в список, чтобы сумма всех элементов списка была
 // равна ближайшему простому числу.
 
-// Пример:  
+// Пример:
 // minimumNumber ([3, 1, 2]) // 1
 
 // const arr = [5, 4, 5];
@@ -3001,7 +3001,7 @@ const str = 'how can mirrors';
 //   let strToArr = str.split(' ');
 //   let upperArray = [];
 //   strToArr.forEach(element => {
-//     upperArray.push(element[0].toUpperCase() + element.slice(1)); 
+//     upperArray.push(element[0].toUpperCase() + element.slice(1));
 //   });
 //   return upperArray.join(' ')
 // }
@@ -3013,7 +3013,7 @@ const str = 'how can mirrors';
 //Напишите функцию, который возвращает true, если заданный параметр является степенью 4, и false, если не является.
 // Если параметр не является целым числом (например, строкой, массивом), метод также должен возвращать false.
 
-// Пример: 
+// Пример:
 //  powerOf4(16) = return true;  "4^4 = 16"
 
 // function powerOf4(num) {
@@ -3024,11 +3024,11 @@ const str = 'how can mirrors';
 
 //                                    ****************************************
 
-// "Числа-вампира" можно описать следующим образом- это составное натуральное число, которое можно разложить на два натуральных числа, 
-// причем оба множителя содержат в точности все цифры исходного числа в любом порядке. Создать функцию, которая может принимать два числа и 
+// "Числа-вампира" можно описать следующим образом- это составное натуральное число, которое можно разложить на два натуральных числа,
+// причем оба множителя содержат в точности все цифры исходного числа в любом порядке. Создать функцию, которая может принимать два числа и
 // определять, является ли их произведение действительным числом вампира. Для примера 6 * 21 = 126
 
-// Пример: 
+// Пример:
 // vampire_test(30,-51)  = true ( -1530 )
 
 // function vampire_test(num1, num2) {
@@ -3038,5 +3038,22 @@ const str = 'how can mirrors';
 // }
 
 // console.log(vampire_test(6, 22));
+
+//                                    ****************************************
+
+// Нужна функция, которая удаляет нули в конце числа.
+
+// Пример:
+// noBoringZeros(1050) = 105
+
+// function noBoringZeros(num) {
+//   let resNum = '';
+//   if (+num.toString().split('')[num.toString().split('').length - 1] === 0) {
+//     resNum = num.toString().split('').slice(0, -1);
+//     return resNum.join('');
+//   } else return num;
+// }
+
+// console.log(noBoringZeros(1050));
 
 //                                    ****************************************
