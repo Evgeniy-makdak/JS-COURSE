@@ -3064,17 +3064,36 @@ const str = 'how can mirrors';
 // Пример:
 // isLeapYear(2020) = true
 
-function isLeapYear(year) {
-  if (year % 4 === 0) {
-    if (year % 400 === 0) {
-      if (year / 100 !== +year.toString().split('').slice(0, -2).join('')) {
-        return true;
-      }
-      return false;
-    }
-    return false;
-  }
-  return false;
-}
+// function isLeapYear(year) {
+//   if (year % 4 === 0) {
+//     if (year % 400 === 0) {
+//       if (year / 100 !== +year.toString().split('').slice(0, -2).join('')) {
+//         return true;
+//       }
+//       return false;
+//     }
+//     return false;
+//   }
+//   return false;
+// }
 
-console.log(isLeapYear(400));
+// console.log(isLeapYear(400));
+
+//                                    ****************************************
+
+// В этой простой задаче вам дается строка чисел, разделенных пробелами, и вы должны вернуть наибольшее и наименьшее число
+
+// Примеры:
+// highAndLow("1 2 3 4 5");   // return "5 1"
+// highAndLow("1 2 -3 4 5");  // return "5 -3"
+// highAndLow("1 9 3 4 -5");  // return "9 -5"
+
+// function highAndLow(str) {
+//   let max = Math.max(...str.split(' ').map(Number)).toString();
+//   let min = Math.min(...str.split(' ').map(Number)).toString();
+//   return `${max} ${min}`;
+// };
+
+// console.log(highAndLow("1 2 -3 4 5"));
+
+//                                    ****************************************
