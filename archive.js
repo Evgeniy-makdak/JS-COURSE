@@ -3057,3 +3057,24 @@ const str = 'how can mirrors';
 // console.log(noBoringZeros(1050));
 
 //                                    ****************************************
+
+// Нужно определить, является ли данный год високосным или нет. Если вы не знаете правил, вот они: годы, кратные 4, являются високосными.
+// Годы, кратные 100, не являются високосными, но годы, кратные 400, являются високосными.
+
+// Пример:
+// isLeapYear(2020) = true
+
+function isLeapYear(year) {
+  if (year % 4 === 0) {
+    if (year % 400 === 0) {
+      if (year / 100 !== +year.toString().split('').slice(0, -2).join('')) {
+        return true;
+      }
+      return false;
+    }
+    return false;
+  }
+  return false;
+}
+
+console.log(isLeapYear(400));
