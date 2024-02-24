@@ -3097,3 +3097,24 @@ const str = 'how can mirrors';
 // console.log(highAndLow("1 2 -3 4 5"));
 
 //                                    ****************************************
+
+// Ваша задача — отсортировать переданную строку. Каждое слово в строке будет содержать одно число.
+// Это число обозначает позицию, которую слово должно занимать в результате
+
+// Пример:
+// "is2 Thi1s T4est 3a"  // "Thi1s is2 3a T4est"
+// "4of Fo1r pe6ople g3ood th5e the2" // "Fo1r the2 g3ood 4of th5e pe6ople"
+
+// function order(strNum) {
+//   const arrStrNum = strNum.split(' ');
+//   arrStrNum.sort((a, b) => {
+//     const numA = Number(a.match(/\d/)[0]);
+//     const numB = Number(b.match(/\d/)[0]);
+//     return numA - numB;
+//   });
+//   return arrStrNum;
+// }
+
+// console.log(order('is2 Thi1s T4est 3a'));
+
+//                                    ****************************************
