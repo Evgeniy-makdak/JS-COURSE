@@ -3158,3 +3158,29 @@ const str = 'how can mirrors';
 
 //                                    ****************************************
 
+// Напишите алгоритм, который берет массив и перемещает все нули в конец, сохраняя порядок следования остальных элементов
+
+// Пример:
+// [false,1,0,1,2,0,1,3,"a"] // --> [false,1,1,2,1,3,"a",0,0]
+// [1,2,0,1,0,1,0,3,0,1]     //--> [1,2,1,1,3,1,0,0,0,0]
+
+// function moveZeros(arr) {
+//   let zerosArr = [];
+//   let mainArr = [];
+//   let zerosCounter = 0;
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] !== 0) {
+//       mainArr.push(arr[i]);
+//     } else zerosCounter++;
+//   };
+//   while (zerosCounter > 0) {
+//     zerosArr.push(0);
+//     zerosCounter--;
+//   }
+//   return mainArr.concat(zerosArr);
+// };
+
+// console.log(moveZeros([false,1,0,1,2,0,1,3,"a"]));
+
+//                                    ****************************************
+
