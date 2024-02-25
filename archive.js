@@ -3135,3 +3135,26 @@ const str = 'how can mirrors';
 // console.log(descendingOrder(123456789));
 
 //                                    ****************************************
+
+// Банкоматы позволяют вводить 4 или 6-значные PIN-коды, причем PIN-коды не могут содержать ничего, кроме ровно 4 или 6 цифр.
+// Если функции передана корректная строка PIN-кода, возвращается true, в противном случае - false
+
+// Пример: 
+// "1234"  // true
+// "12345" // false
+// "a234"  // false
+
+// function validatePIN (pin) {
+//   const onlyNumbers = pin.split('');
+//   for (let i = 0; i < onlyNumbers.length; i++) {
+//     if (!onlyNumbers[i].match(/^[0-9]$/)) {
+//       return false;
+//     }
+//   }
+//   return pin.length === 4 || pin.length === 6 ? true : false;
+// };
+
+// console.log(validatePIN('927373'));
+
+//                                    ****************************************
+
