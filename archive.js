@@ -3139,7 +3139,7 @@ const str = 'how can mirrors';
 // Банкоматы позволяют вводить 4 или 6-значные PIN-коды, причем PIN-коды не могут содержать ничего, кроме ровно 4 или 6 цифр.
 // Если функции передана корректная строка PIN-кода, возвращается true, в противном случае - false
 
-// Пример: 
+// Пример:
 // "1234"  // true
 // "12345" // false
 // "a234"  // false
@@ -3202,6 +3202,23 @@ const str = 'how can mirrors';
 
 // дан массив случайных чисел, найдите сумму двух наименьших чисел из этого массива
 
-function isSummOfMinimum(randArr) {
+// function isSummOfMinimum(randArr) {
+//   const lowerNumbersOfArr = randArr.sort((a, b) => a - b).splice(0, 2);
+//   let summLowerNumbersOfArr = lowerNumbersOfArr.reduce((acc, el) => {
+//     return acc + el;
+//   }, 0);
+//   return summLowerNumbersOfArr;
+// }
 
+// console.log(isSummOfMinimum([18, 23, 5, 14, 88, -3, 2, 11]));
+
+//                                    ****************************************
+
+// Необходимо преобразовать строку так, что бы каждое слово начиналось с большой буквы.
+
+// Пример: 
+// str.toJadenCase() =  "How Can Mirrors"
+
+String. prototype. toJadenCase = function () {
+  
 }
