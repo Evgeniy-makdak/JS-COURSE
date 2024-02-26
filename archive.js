@@ -3219,6 +3219,14 @@ const str = 'how can mirrors';
 // Пример: 
 // str.toJadenCase() =  "How Can Mirrors"
 
-String. prototype. toJadenCase = function () {
-  
-}
+// function toJadenCase(str) {
+//   const newStr = str.split(' ');
+//   let upperStr = newStr.map(element => {
+//     return element[0].toUpperCase() + element.split('').splice(1, element.length).join('');
+//   });
+//   return upperStr.join(' ');
+// };
+
+// console.log(toJadenCase('how can mirrors'));
+
+//                                    ****************************************
