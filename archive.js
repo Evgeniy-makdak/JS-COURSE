@@ -3230,3 +3230,32 @@ const str = 'how can mirrors';
 // console.log(toJadenCase('how can mirrors'));
 
 //                                    ****************************************
+
+// Учитывая год, верните столетие, в котором он находится
+
+// Пример:
+// 1705 // --> 18
+// 1900 // --> 19
+// 1601 // --> 17
+// 2000 // --> 21
+
+// function yearToCentary(year) {
+//   const centary = +year.toString().substring(0, 2) + 1;
+//   // const centary1 = +year.toString().slice(0, 2) + 1;
+//   // const centary2 = +year.toString().substr(0, 2) + 1;
+
+
+//   return centary;
+// };
+
+// console.log(yearToCentary(2000));
+
+//                                    ****************************************
+
+// Найдите длину самой длинной подстроки в заданной строке s, которая совпадает с ней в обратном порядке.
+// В качестве примера, если вводимая строка была "I like racecars that go fast", длина подстроки (racecar) будет равна 7.
+// Если длина входной строки равна 0, возвращаемое значение должно быть равно 0.
+
+// Пример: 
+// longestPalindrome("baabcd") = 4
+
