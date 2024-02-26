@@ -3216,7 +3216,7 @@ const str = 'how can mirrors';
 
 // Необходимо преобразовать строку так, что бы каждое слово начиналось с большой буквы.
 
-// Пример: 
+// Пример:
 // str.toJadenCase() =  "How Can Mirrors"
 
 // function toJadenCase(str) {
@@ -3244,7 +3244,6 @@ const str = 'how can mirrors';
 //   // const centary1 = +year.toString().slice(0, 2) + 1;
 //   // const centary2 = +year.toString().substr(0, 2) + 1;
 
-
 //   return centary;
 // };
 
@@ -3252,10 +3251,27 @@ const str = 'how can mirrors';
 
 //                                    ****************************************
 
-// Найдите длину самой длинной подстроки в заданной строке s, которая совпадает с ней в обратном порядке.
+// Найдите длину самой длинной подстроки в заданной строке str, которая совпадает с ней в обратном порядке.
 // В качестве примера, если вводимая строка была "I like racecars that go fast", длина подстроки (racecar) будет равна 7.
 // Если длина входной строки равна 0, возвращаемое значение должно быть равно 0.
 
-// Пример: 
+// Пример:
 // longestPalindrome("baabcd") = 4
+
+// function longestPalindrome(str) {
+//   let longestLength = 0;
+//   str.split(' ').forEach((palindromStr) => {
+//     while (palindromStr !== palindromStr.split('').reverse().join('')) {
+//       palindromStr = palindromStr.split('').slice(0, -1).join('');
+//     }
+//     if (palindromStr.length > longestLength) {
+//       longestLength = palindromStr.length;
+//     }
+//   });
+//   return longestLength;
+// }
+
+// console.log(longestPalindrome('baabcd'));
+
+//                                    ****************************************
 
