@@ -3322,3 +3322,18 @@ const str = 'how can mirrors';
 
 //                                    ****************************************
 
+// Создайте функцию перевода десятичного числа в двоичный код.
+
+// function countBits(n) {
+//   let twiceArr = [];
+//   while (Math.floor(n / 2 !== 0)) {
+//     twiceArr.push(n % 2);
+//     n = Math.floor(n / 2);
+//   };
+//   return twiceArr.reverse().join('')
+// };
+
+// console.log(countBits(1234));
+
+//                                    ****************************************
+
