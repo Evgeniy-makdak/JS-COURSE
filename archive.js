@@ -3275,3 +3275,25 @@ const str = 'how can mirrors';
 
 //                                    ****************************************
 
+// Создайте функцию, которая будет возвращать строку, объединяющую все буквы трех введенных строк в группы.
+// Возьмите первую букву всех вводимых строк и сгруппируйте их рядом друг с другом. Сделайте это для каждой буквы, см. пример ниже! Примечание:
+// Вы можете ожидать, что все входные данные будут одинаковой длины.
+
+// Пример: 
+// tripleTrouble("aaa","bbb","ccc") = "abcabcabc"
+
+// function tripleTrouble(one, two, three) {
+//   const arrOne = one.split('');
+//   const arrTwo = two.split(''); 
+//   const arrThree = three.split(''); 
+//   let tripleString = [];
+//   for (let i = 0; i < arrOne.length; i++) {
+//     tripleString.push(arrOne[i], arrTwo[i], arrThree[i]);
+//   };
+//   return tripleString.join('');
+// };
+
+// console.log(tripleTrouble("aaa","bbb","ccc"));
+
+//                                    ****************************************
+
