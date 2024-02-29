@@ -3362,3 +3362,15 @@ const str = 'how can mirrors';
 
 //                                    ****************************************
 
+
+// Задача 1
+// Нахождение слов
+
+// Дана строка со словами. Не используя массивы, циклы и регулярные выражения выведите на экран: первое слово, второе слово, последнее слово.
+
+// const inputString = 'That can I do?';
+// const firstEmptyIndex = inputString.indexOf(' ');
+// const firstWord = inputString.slice(0, firstEmptyIndex);
+// console.log(firstWord);
+
+//                                    ****************************************
