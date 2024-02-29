@@ -3337,3 +3337,28 @@ const str = 'how can mirrors';
 
 //                                    ****************************************
 
+// Вам будет дан массив чисел. Вам нужно отсортировать нечетные числа в порядке возрастания, оставив четные числа на прежних местах.
+
+// Пример: 
+// [7, 1]  // [1, 7]
+// [5, 8, 6, 3, 4]  //  [3, 8, 6, 5, 4]
+// [9, 8, 7, 6, 5, 4, 3, 2, 1, 0]  //  [1, 8, 3, 6, 5, 4, 7, 2, 9, 0]
+
+// function sortArray(array) {
+//   let sortArr = [...array]; // либо let sortArray = array.slice();
+//   const oddNumbers = sortArr.filter(num => num % 2 !== 0); 
+//   const sortedOddNumbers = oddNumbers.sort((a, b) => a - b); 
+//   let oddIndex = 0;
+//   for (let i = 0; i < sortArr.length; i++) {
+//     if (sortArr[i] % 2 !== 0) {
+//       sortArr[i] = sortedOddNumbers[oddIndex];
+//       oddIndex++;
+//     }
+//   }
+//   return sortArr;
+// };
+
+// console.log(sortArray([9, 8, 7, 6, 5, 4, 3, 2, 1, 0]));
+
+//                                    ****************************************
+
