@@ -3382,16 +3382,38 @@ const str = 'how can mirrors';
 // 1, 1  //  "10" (1 + 1 = 2 in decimal or 10 in binary)
 // 5, 9  //  "1110" (5 + 9 = 14 in decimal or 1110 in binary)
 
-function addBinary (a, b) {
-  let summ = a + b;
-  let binary = [];
-  while (Math.floor(summ / 2 !== 0)) {
-    binary.push(summ % 2);
-    summ = Math.floor(summ / 2);
-  };
-  return binary.reverse().join('');
-};
+// function addBinary (a, b) {
+//   let summ = a + b;
+//   let binary = [];
+//   while (Math.floor(summ / 2 !== 0)) {
+//     binary.push(summ % 2);
+//     summ = Math.floor(summ / 2);
+//   };
+//   return binary.reverse().join('');
+// };
 
-console.log(addBinary(5, 9)); 
+// console.log(addBinary(5, 9)); 
 
 //                                    ****************************************
+
+// В строке цифр необходимо заменить любую цифру ниже 5 на '0', а любую цифру 5 и выше на '1'. Верните полученную строку.
+// Примечание: входные данные никогда не будут пустой строкой.
+
+// Пример: 
+// fakeBin('45385593107843568') = '01011110001100111'
+
+// function fakeBin (x) {
+//   let newX = [];
+//   const arrX = x.split('');
+//   for (let i = 0; i < arrX.length; i++) {
+//     if (arrX[i] < 5) {
+//       newX.push(0);
+//     } else newX.push(1);
+//   };
+//   return newX.join('');
+// };
+
+// console.log(fakeBin('45385593107843568'));
+
+//                                    ****************************************
+
