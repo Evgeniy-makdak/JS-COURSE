@@ -3333,7 +3333,7 @@ const str = 'how can mirrors';
 //   return twiceArr.reverse().join('')
 // };
 
-// console.log(countBits(1234));
+// console.log(countBits(14));
 
 //                                    ****************************************
 
@@ -3372,5 +3372,26 @@ const str = 'how can mirrors';
 // const firstEmptyIndex = inputString.indexOf(' ');
 // const firstWord = inputString.slice(0, firstEmptyIndex);
 // console.log(firstWord);
+
+//                                    ****************************************
+
+// Реализуйте функцию, которая складывает два числа и возвращает их сумму в двоичном виде. Преобразование может быть выполнено до или после сложения
+// Возвращаемое двоичное число должно быть строкой
+
+// Пример: 
+// 1, 1  //  "10" (1 + 1 = 2 in decimal or 10 in binary)
+// 5, 9  //  "1110" (5 + 9 = 14 in decimal or 1110 in binary)
+
+function addBinary (a, b) {
+  let summ = a + b;
+  let binary = [];
+  while (Math.floor(summ / 2 !== 0)) {
+    binary.push(summ % 2);
+    summ = Math.floor(summ / 2);
+  };
+  return binary.reverse().join('');
+};
+
+console.log(addBinary(5, 9)); 
 
 //                                    ****************************************
