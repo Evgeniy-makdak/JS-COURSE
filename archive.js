@@ -2995,7 +2995,7 @@
 
 // Необходимо преобразовать строку так, что бы каждое слово начиналось с большой буквы.
 
-const str = 'how can mirrors';
+// const str = 'how can mirrors';
 
 // function toJadenCase(str) {
 //   let strToArr = str.split(' ');
@@ -3279,13 +3279,13 @@ const str = 'how can mirrors';
 // Возьмите первую букву всех вводимых строк и сгруппируйте их рядом друг с другом. Сделайте это для каждой буквы, см. пример ниже! Примечание:
 // Вы можете ожидать, что все входные данные будут одинаковой длины.
 
-// Пример: 
+// Пример:
 // tripleTrouble("aaa","bbb","ccc") = "abcabcabc"
 
 // function tripleTrouble(one, two, three) {
 //   const arrOne = one.split('');
-//   const arrTwo = two.split(''); 
-//   const arrThree = three.split(''); 
+//   const arrTwo = two.split('');
+//   const arrThree = three.split('');
 //   let tripleString = [];
 //   for (let i = 0; i < arrOne.length; i++) {
 //     tripleString.push(arrOne[i], arrTwo[i], arrThree[i]);
@@ -3300,7 +3300,7 @@ const str = 'how can mirrors';
 // Напишите функцию, которая принимает на вход целое число и возвращает количество битов, равных единице в двоичном представлении этого числа.
 // Вы можете гарантировать, что входные данные неотрицательны.
 
-// Пример: 
+// Пример:
 // Двоичное представление числа 1234 - 10011010010, поэтому в данном случае функция должна вернуть 5.
 
 // function countBits(n) {
@@ -3339,15 +3339,15 @@ const str = 'how can mirrors';
 
 // Вам будет дан массив чисел. Вам нужно отсортировать нечетные числа в порядке возрастания, оставив четные числа на прежних местах.
 
-// Пример: 
+// Пример:
 // [7, 1]  // [1, 7]
 // [5, 8, 6, 3, 4]  //  [3, 8, 6, 5, 4]
 // [9, 8, 7, 6, 5, 4, 3, 2, 1, 0]  //  [1, 8, 3, 6, 5, 4, 7, 2, 9, 0]
 
 // function sortArray(array) {
 //   let sortArr = [...array]; // либо let sortArray = array.slice();
-//   const oddNumbers = sortArr.filter(num => num % 2 !== 0); 
-//   const sortedOddNumbers = oddNumbers.sort((a, b) => a - b); 
+//   const oddNumbers = sortArr.filter(num => num % 2 !== 0);
+//   const sortedOddNumbers = oddNumbers.sort((a, b) => a - b);
 //   let oddIndex = 0;
 //   for (let i = 0; i < sortArr.length; i++) {
 //     if (sortArr[i] % 2 !== 0) {
@@ -3361,7 +3361,10 @@ const str = 'how can mirrors';
 // console.log(sortArray([9, 8, 7, 6, 5, 4, 3, 2, 1, 0]));
 
 //                                    ****************************************
-
+//                                    ****************************************
+//                                    ****************************************
+//                                    ****************************************
+//                                    ****************************************
 
 // Задача 1
 // Нахождение слов
@@ -3375,10 +3378,99 @@ const str = 'how can mirrors';
 
 //                                    ****************************************
 
+// Задача 2
+// Отделение троек цифр в числе
+
+// Дано число, например такое:
+// '12345678'
+
+// Отделите пробелом каждую тройку чисел с конца. То есть у нас должно получится:
+// '12 345 678'
+// const str = '12345678'
+
+// function threeNumbers(strNum) {
+//   let separateStr = ''
+//   for (let i = strNum.length - 1; i >= 0; i--) {
+//     if (separateStr.length % 3 === 0) {
+//       separateStr = separateStr + ' ';
+//     } else separateStr = str[i];
+//   };
+//   return separateStr;
+// };
+
+// console.log(threeNumbers('12345678'));
+
+//                                    ****************************************
+
+// Задача 3
+// Удаление слова по клику по нему
+
+// Дан див с текстом:
+// <div>
+//   word1 word2 word3 word4 word5 word6 word7
+// </div>
+
+// Сделайте так, чтобы по клику на конкретное слово оно удалялось из текста.
+
+// html:
+{/* <body>
+<div class="container">
+  <span class="word">word1</span>
+  <span class="word">word2</span>
+  <span class="word">word3</span>
+  <span class="word">word4</span>
+  <span class="word">word5</span>
+  <span class="word">word6</span>
+  <span class="word">word7</span>
+</div>
+
+<script src="./archive.js"></script>
+</body> */}
+
+// const container = document.getElementsByClassName('container')[0];
+// const words = container.getElementsByClassName('word');
+
+// function removeWordOnClick(event) {
+//   // Получаем элемент, на котором произошел клик
+//   const clickedElement = event.target;
+
+//   // Проверяем, является ли кликнутый элемент словом
+//   if (clickedElement.classList.contains('word')) {
+//     // Удаляем слово из родительского элемента
+//     clickedElement.parentNode.removeChild(clickedElement);
+//   }
+// }
+
+// // Добавляем обработчик события клика для каждого слова
+// for (let i = 0; i < words.length; i++) {
+//   words[i].addEventListener('click', removeWordOnClick);
+// }
+
+//                                    ****************************************
+
+// Задача 4
+// Разложение на простые множители
+
+// Дано число. Разложите его на простые множители. Например, разложим число 120. Результатом будет: 2 * 2 * 2 * 3 * 5.
+
+//                                    ****************************************
+
+// Задача 5
+// Ограниченная активация ячеек таблицы
+
+// Дана таблица произвольного размера. Пусть по нажатию на ячейку таблицы эта ячейка как-то активируется, например, красится красным фоном.
+// Сделайте так, чтобы, если активировано 5 ячеек подряд по горизонтали или по вертикали, больше никаких ячеек активировать было нельзя.
+
+//                                    ****************************************
+//                                    ****************************************
+//                                    ****************************************
+//                                    ****************************************
+//                                    ****************************************
+
 // Реализуйте функцию, которая складывает два числа и возвращает их сумму в двоичном виде. Преобразование может быть выполнено до или после сложения
 // Возвращаемое двоичное число должно быть строкой
 
-// Пример: 
+// Пример:
 // 1, 1  //  "10" (1 + 1 = 2 in decimal or 10 in binary)
 // 5, 9  //  "1110" (5 + 9 = 14 in decimal or 1110 in binary)
 
@@ -3392,14 +3484,14 @@ const str = 'how can mirrors';
 //   return binary.reverse().join('');
 // };
 
-// console.log(addBinary(5, 9)); 
+// console.log(addBinary(5, 9));
 
 //                                    ****************************************
 
 // В строке цифр необходимо заменить любую цифру ниже 5 на '0', а любую цифру 5 и выше на '1'. Верните полученную строку.
 // Примечание: входные данные никогда не будут пустой строкой.
 
-// Пример: 
+// Пример:
 // fakeBin('45385593107843568') = '01011110001100111'
 
 // function fakeBin (x) {
@@ -3416,4 +3508,3 @@ const str = 'how can mirrors';
 // console.log(fakeBin('45385593107843568'));
 
 //                                    ****************************************
-
