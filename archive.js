@@ -3520,27 +3520,48 @@
 // Пример: 
 // "test"  //  "grfg"
 
-function rot13(message){
-  const alphabet = 'abcdefghijklmnopqrstuvwxyz'
-  let newMessage = [];
-  let resultStr = [];
-  for (let i = 0; i < message.length; i++) {
-    for (let j = 0; j < alphabet.length; j++) {
-      if (message[i] === alphabet[j]) {
-        if (j < 13) {
-          newMessage.push(j + 13)
-        } else {
-          newMessage.push(j - 13)
-        }
-      };
-    };
-  };
-  for (let k = 0; k < newMessage.length; k++) {
-    resultStr.push(alphabet[newMessage[k]]);
-  };
-  return resultStr.join('');
+// function rot13(message){
+//   const alphabet = 'abcdefghijklmnopqrstuvwxyz'
+//   let newMessage = [];
+//   let resultStr = [];
+//   for (let i = 0; i < message.length; i++) {
+//     for (let j = 0; j < alphabet.length; j++) {
+//       if (message[i] === alphabet[j]) {
+//         if (j < 13) {
+//           newMessage.push(j + 13)
+//         } else {
+//           newMessage.push(j - 13)
+//         }
+//       };
+//     };
+//   };
+//   for (let k = 0; k < newMessage.length; k++) {
+//     resultStr.push(alphabet[newMessage[k]]);
+//   };
+//   return resultStr.join('');
+// };
+
+// console.log(rot13('test'));
+
+//                                    ****************************************
+
+// Вам будет предоставлено слово. Ваша задача — вернуть средний символ слова. Если длина слова нечетная, верните средний символ.
+// Если длина слова четная, верните 2 средних символа
+
+// Пример: 
+// 'test'    //  'es'
+// 'testing' //  't'
+// 'middle'  //  'dd'
+// 'A'       //  'A'
+
+function getMiddle(s) {
+  let middleS = '';
+  if (s.length % 2 !== 0) {
+    middleS = s[Math.floor(s.length / 2)];
+  } else middleS = s[Math.floor(s.length / 2 - 1)] + s[Math.floor(s.length / 2)]
+  return middleS;
 };
 
-console.log(rot13('test'));
+console.log(getMiddle('A'));
 
 //                                    ****************************************
