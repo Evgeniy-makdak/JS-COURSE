@@ -3455,6 +3455,22 @@
 
 // Дано число. Разложите его на простые множители. Например, разложим число 120. Результатом будет: 2 * 2 * 2 * 3 * 5.
 
+function slowDeviders(num) {
+  let slowArr = [];
+  let k = 2;
+  while (num !== 1) {
+    if (num % k === 0) {
+      slowArr.push(k);
+      num = num / k;
+    } else {
+      k++;
+    }
+  }
+  return slowArr.join('*');
+}
+
+console.log(slowDeviders(120));
+
 //                                    ****************************************
 
 // Задача 5
@@ -3573,17 +3589,17 @@
 // "bitcoin take over the world maybe who knows perhaps" // 3
 // "Let's travel abroad shall we" // 2
 
-function findShort(s) {
-  const arrS = s.split(' ');
-  let shortWord = arrS[0];
-  for (let i = 1; i < arrS.length; i++) {
-    if (shortWord.length > arrS[i].length) {
-      shortWord = arrS[i];
-    }
-  }
-  return shortWord.length;
-}
+// function findShort(s) {
+//   const arrS = s.split(' ');
+//   let shortWord = arrS[0];
+//   for (let i = 1; i < arrS.length; i++) {
+//     if (shortWord.length > arrS[i].length) {
+//       shortWord = arrS[i];
+//     }
+//   }
+//   return shortWord.length;
+// }
 
-console.log(findShort("Let's travel abroad shall we"));
+// console.log(findShort("Let's travel abroad shall we"));
 
 //                                    ****************************************
