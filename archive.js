@@ -3413,7 +3413,8 @@
 // Сделайте так, чтобы по клику на конкретное слово оно удалялось из текста.
 
 // html:
-{/* <body>
+{
+  /* <body>
 <div class="container">
   <span class="word">word1</span>
   <span class="word">word2</span>
@@ -3425,7 +3426,8 @@
 </div>
 
 <script src="./archive.js"></script>
-</body> */}
+</body> */
+}
 
 // const container = document.getElementsByClassName('container')[0];
 // const words = container.getElementsByClassName('word');
@@ -3452,8 +3454,6 @@
 // Разложение на простые множители
 
 // Дано число. Разложите его на простые множители. Например, разложим число 120. Результатом будет: 2 * 2 * 2 * 3 * 5.
-
-
 
 //                                    ****************************************
 
@@ -3517,7 +3517,7 @@
 // Если в строку включены цифры или специальные символы, их следует вернуть в исходном виде.
 // Смещать следует только буквы латинского/английского алфавита, как в оригинальной «реализации» Rot13
 
-// Пример: 
+// Пример:
 // "test"  //  "grfg"
 
 // function rot13(message){
@@ -3548,20 +3548,42 @@
 // Вам будет предоставлено слово. Ваша задача — вернуть средний символ слова. Если длина слова нечетная, верните средний символ.
 // Если длина слова четная, верните 2 средних символа
 
-// Пример: 
+// Пример:
 // 'test'    //  'es'
 // 'testing' //  't'
 // 'middle'  //  'dd'
 // 'A'       //  'A'
 
-function getMiddle(s) {
-  let middleS = '';
-  if (s.length % 2 !== 0) {
-    middleS = s[Math.floor(s.length / 2)];
-  } else middleS = s[Math.floor(s.length / 2 - 1)] + s[Math.floor(s.length / 2)]
-  return middleS;
-};
+// function getMiddle(s) {
+//   let middleS = '';
+//   if (s.length % 2 !== 0) {
+//     middleS = s[Math.floor(s.length / 2)];
+//   } else middleS = s[Math.floor(s.length / 2 - 1)] + s[Math.floor(s.length / 2)]
+//   return middleS;
+// };
 
-console.log(getMiddle('A'));
+// console.log(getMiddle('A'));
+
+//                                    ****************************************
+
+// Просто, учитывая строку слов, верните длину самого короткого слова (слов).
+// Строка никогда не будет пустой, и вам не нужно учитывать разные типы данных.
+
+// Пример:
+// "bitcoin take over the world maybe who knows perhaps" // 3
+// "Let's travel abroad shall we" // 2
+
+function findShort(s) {
+  const arrS = s.split(' ');
+  let shortWord = arrS[0];
+  for (let i = 1; i < arrS.length; i++) {
+    if (shortWord.length > arrS[i].length) {
+      shortWord = arrS[i];
+    }
+  }
+  return shortWord.length;
+}
+
+console.log(findShort("Let's travel abroad shall we"));
 
 //                                    ****************************************
