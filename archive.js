@@ -3455,21 +3455,21 @@
 
 // Дано число. Разложите его на простые множители. Например, разложим число 120. Результатом будет: 2 * 2 * 2 * 3 * 5.
 
-function slowDeviders(num) {
-  let slowArr = [];
-  let k = 2;
-  while (num !== 1) {
-    if (num % k === 0) {
-      slowArr.push(k);
-      num = num / k;
-    } else {
-      k++;
-    }
-  }
-  return slowArr.join('*');
-}
+// function slowDeviders(num) {
+//   let slowArr = [];
+//   let k = 2;
+//   while (num !== 1) {
+//     if (num % k === 0) {
+//       slowArr.push(k);
+//       num = num / k;
+//     } else {
+//       k++;
+//     }
+//   }
+//   return slowArr.join('*');
+// }
 
-console.log(slowDeviders(120));
+// console.log(slowDeviders(120));
 
 //                                    ****************************************
 
@@ -3601,5 +3601,28 @@ console.log(slowDeviders(120));
 // }
 
 // console.log(findShort("Let's travel abroad shall we"));
+
+//                                    ****************************************
+
+// Напишите функцию, которая принимает целое положительное число n, суммирует все кубические значения от 1 до n (включительно) и
+// возвращает эту сумму.
+// Предположим, что входное n всегда будет целым положительным числом.
+
+// Пример:
+// 2 --> 9 (1 + 8)
+// 3 --> 36 (1 + 8 + 27)
+
+// function sumCubes(n) {
+//   let summer3 = [];
+//   for (let i = 1; i <= n; i++) {
+//     summer3.push(i ** 3);
+//   };
+//   let sumCubes = summer3.reduce((acc, el) => {
+//     return acc + el;
+//   });
+//   return sumCubes;
+// };
+
+// console.log(sumCubes(3));
 
 //                                    ****************************************
