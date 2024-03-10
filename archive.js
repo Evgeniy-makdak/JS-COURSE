@@ -3683,3 +3683,22 @@
 // console.log(timeCorrect('24:01:01'));
 
 //                                    ****************************************
+
+// Напишите функцию так, чтобы она возвращала количество позиций, в которых входные строки не совпадают.
+
+// Пример:
+// const a = 'I like turtlesuyt';
+// const b = 'I like turkeysuy';
+// // Result: 3
+
+// function hamming(a, b) {
+//   let counter = 0;
+//   for (let i = 0; i < a.length; i++) {  // Если a.length >= b.length
+//     if (a[i] !== b[i]) {
+//       counter++;
+//     }
+//   }
+//   return `Result: ${counter}`;
+// }
+
+// console.log(hamming(a, b));
