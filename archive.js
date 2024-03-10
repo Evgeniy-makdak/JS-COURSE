@@ -3644,3 +3644,42 @@
 // console.log(isDivisible(11, 3, 4));
 
 //                                    ****************************************
+
+// Нужно создать метод, который корректирует заданную временную строку.
+// При добавлении возникла проблема, поэтому многие временные строки сломаны.
+// Время форматируется с использованием 24-часовых часов, то есть с 00:00:00 до 23:59:59.
+
+// Пример:
+// "09:10:01" -> "09:10:01"
+// "11:70:10" -> "12:10:10"
+// "19:99:99" -> "20:40:39"
+// "24:01:01" -> "00:01:01"
+
+// function timeCorrect(timestring) {
+//   const timeArrow = timestring.split(':');
+//   let correctTime = [];
+//   if (timeArrow[2] >= 60) {
+//     timeArrow[1] = +timeArrow[1] + Math.floor(timeArrow[2] / 60);
+//     timeArrow[2] = timeArrow[2] % 60;
+//   } else {
+//     timeArrow[2] = timeArrow[2];
+//   }
+//   if (timeArrow[1] >= 60) {
+//     timeArrow[0] = +timeArrow[0] + Math.floor(timeArrow[1] / 60);
+//     timeArrow[1] = timeArrow[1] % 60;
+//   } else {
+//     timeArrow[1] = timeArrow[1];
+//   }
+//   if (timeArrow[0] >= 24) {
+//     timeArrow[0] = timeArrow[0] - 24;
+//   }
+//   for (let i = 0; i < timeArrow.length; i++) {
+//     correctTime.push(timeArrow[i]);
+//   }
+
+//   return correctTime.join(':');
+// }
+
+// console.log(timeCorrect('24:01:01'));
+
+//                                    ****************************************
