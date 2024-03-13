@@ -3489,6 +3489,21 @@
 
 // console.log(countElements);
 
+// Задача 67
+// Самое популярное слово.
+// Дан текст. Найдите самое часто встречающееся слово в этом тексте.
+
+// const sentanse = 'is what what is this is off what what';
+
+// const sentanseArrow = sentanse.split(' ');
+// let popularObj = sentanseArrow.reduce((acc, word) => {
+//   if (word in acc) acc[word]++;
+//   else acc[word] = 1;
+//   return acc;
+// }, {});
+
+// console.log(popularObj);
+
 //                                    ****************************************
 //                                    ****************************************
 //                                    ****************************************
@@ -3712,3 +3727,29 @@
 // }
 
 // console.log(hamming(a, b));
+
+//                                    ****************************************
+
+// Реализуйте функцию, которая получает два адреса IPv4 и возвращает количество адресов между ними (включая первый, исключая последний).
+// Все входные данные будут действительными адресами IPv4 в виде строк. Последний адрес всегда будет больше первого.
+
+// Пример:
+// * With input "10.0.0.0", "10.0.0.50"  => return   50
+// * With input "10.0.0.0", "10.0.1.0"   => return  256
+// * With input "20.0.0.10", "20.0.1.0"  => return  246
+
+// function howManyAdress(ip1, ip2) {
+//   const ip1ToDecimal = ip1.split('.');
+//   const ip2ToDecimal = ip2.split('.');
+//   let ipBetween =
+//     (ip2ToDecimal[0] - ip1ToDecimal[0]) * 256 ** 3 +
+//     (ip2ToDecimal[1] - ip1ToDecimal[1]) * 256 ** 2 +
+//     (ip2ToDecimal[2] - ip1ToDecimal[2]) * 256 + 
+//     (ip2ToDecimal[3] - ip1ToDecimal[3]);
+//     return ipBetween;
+// };
+
+// console.log(howManyAdress("20.0.0.10", "20.0.1.0"));
+
+//                                    ****************************************
+
