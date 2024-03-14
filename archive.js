@@ -3813,13 +3813,33 @@ let num = 1234567890
 // solution('abc', 'bc')  //  returns true
 // solution('abc', 'd')  //  returns false
 
-function solution(str, ending){
-  const secondLength = ending.length;
-  let newStr = str.slice(str.length - secondLength, str.length);
-  return newStr === ending ? true : false;
-};
+// function solution(str, ending){
+//   const secondLength = ending.length;
+//   let newStr = str.slice(str.length - secondLength, str.length);
+//   return newStr === ending ? true : false;
+// };
 
-console.log(solution('abc', 'd'));
+// console.log(solution('abc', 'd'));
 
 //                                    ****************************************
 
+// Реализовать функцию разности, которая вычитает один список из другого и возвращает результат.
+// Нужно удалить все значения из списка a, которые присутствуют в списке b, сохраняя их порядок
+
+// Пример: 
+// arrayDiff([1,2],[1])  //  [2]
+// arrayDiff([1,2,2,2,3],[2])  //  [1,3]
+
+// function arrayDiff(a, b) {
+//   let diffArray = [];
+//   for (let i = 0; i < a.length; i++) {
+//     if (a[i] !== b[0]) {
+//       diffArray.push(a[i]);
+//     };
+//   };
+//   return diffArray;
+// };
+
+// console.log(arrayDiff([1,2,2,2,3],[2]));
+
+//                                    ****************************************
