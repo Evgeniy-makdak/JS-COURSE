@@ -1535,14 +1535,6 @@
 // </body> */
 // }
 
-// 5.1.5 Даны инпуты, в которые вводятся числа. Сделайте так, чтобы по потери фокуса в любом инпуте его значение возводилось в квадрат.
-// html:
-// <body>
-//     <input type="button" class="paragraph1" onclick="showResOne()" style="width: 104px; height: 20px; border: solid 0.5px; margin-bottom: 10px; font-size: small; display: flex; justify-content: center; cursor: pointer;" value="2">
-//     <input type="text" class="paragraph2" onblur="showResTwo()" style="width: 100px; height: 20px; border: solid 0.5px; text-align: center; cursor: pointer;" value="3">
-//     <button onclick="toNull()">начальные значения</button>
-//     <script src="tasks.js"></script>
-// </body>
 
 // 5.2.1 Дан абзац и кнопка. По нажатию на кнопку найдите сумму чисел от 1 до 100 и запишите результат в абзац.
 // const variant = document.getElementsByClassName("paragraph");
@@ -2010,7 +2002,7 @@
 //     return year, month, day;
 // };
 
-// 5.5.2 Даны два инпута и кнопка. В инпуты вводятся числа. По нажатию на кнопку заполните массив целыми числами от первого введеного числа до последнего.
+
 // 5.5.2 Даны два инпута и кнопка. В инпуты вводятся числа. По нажатию на кнопку заполните массив целыми числами от первого введеного числа до последнего.
 // const inputStart = document.querySelector('.inpstart');
 // const inputEnd = document.getElementsByClassName('inpend')[0];
@@ -2244,7 +2236,7 @@
 //   document.querySelector(".input").value = res;
 // }
 
-// 5.8.3 Дан инпут и абзац. В инпут через запятую вводятся числа. По потери фокуса найдите сумму введенных чисел и выведите ее в абзац.
+// 5.8.3 Дан инпут и абзац. В инпут через запятую вводятся числа. По потере фокуса найдите сумму введенных чисел и выведите ее в абзац.
 // const inp = document.querySelector('.input');
 
 // function sumInp() {
@@ -3788,18 +3780,18 @@ let num = 1234567890
 
 //                                    ****************************************
 
-function pattern(n) {
-  let output = '';
-  for (let i = 1; i <= n; i++) {
-    for (let j = 1; j <= i; j++) {
-      output += i;
-    };
-    output += '\n';
-  };
-  return output;
-};
+// function pattern(n) {
+//   let output = '';
+//   for (let i = 1; i <= n; i++) {
+//     for (let j = 1; j <= i; j++) {
+//       output += i;
+//     };
+//     output += '\n';
+//   };
+//   return output;
+// };
 
-console.log(pattern(5));
+// console.log(pattern(5));
 // Нужно написать шаблон функции, который возвращает
 // определённый шаблон (смотрите пример) на п строк.
 // Если n < 1, то он должен вернуть пустую строку.
@@ -3812,3 +3804,22 @@ console.log(pattern(5));
 // 55555
 
 // Используйте \n в строке, чтобы перейти к следующей строке
+
+//                                    ****************************************
+
+// Функция возвращает true, если первый переданный аргумент (строка) заканчивается вторым аргументом (тоже строка)
+
+// Пример: 
+// solution('abc', 'bc')  //  returns true
+// solution('abc', 'd')  //  returns false
+
+function solution(str, ending){
+  const secondLength = ending.length;
+  let newStr = str.slice(str.length - secondLength, str.length);
+  return newStr === ending ? true : false;
+};
+
+console.log(solution('abc', 'd'));
+
+//                                    ****************************************
+
