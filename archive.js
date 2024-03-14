@@ -3843,3 +3843,26 @@ let num = 1234567890
 // console.log(arrayDiff([1,2,2,2,3],[2]));
 
 //                                    ****************************************
+
+// Задав строку str, переверните ее и уберите все неалфавитные символы.
+// Примечание: Строка состоит из строчных латинских букв, цифр и символов.
+
+// Пример:
+// reverseLetter("krishan") => "nahsirk"
+// reverseLetter("ab23c") => "cba"
+
+// function reverseLetter(str) {
+//   let resString = '';
+//   const alphabet = 'abcdifghijklmnopqrstuvwxyz'
+//   for (let letter of str) {
+//     if (alphabet.includes(letter)) {
+//       resString += letter;
+//     };
+//   };
+//   return resString.split('').reverse().join('');
+// };
+
+// console.log(reverseLetter("ab23c")); 
+
+//                                    ****************************************
+
