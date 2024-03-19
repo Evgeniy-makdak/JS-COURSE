@@ -3497,7 +3497,7 @@
 // Задача 70
 // Группировка массива по первым буквам
 // Дан произвольный массив со словами, начинающимися на различные буквы, например, вот такой:
-let arr = ['axx', 'bxx', 'cxx', 'ayy', 'byy', 'cyy', 'azz', 'bzz', 'czz'];
+// let arr = ['axx', 'bxx', 'cxx', 'ayy', 'byy', 'cyy', 'azz', 'bzz', 'czz'];
 
 // Преобразуйте этот массив в объект, в котором ключами будут первые буквы слов, а значениями массивы слов, начинающихся на эти буквы:
 // {
@@ -3526,6 +3526,35 @@ let arr = ['axx', 'bxx', 'cxx', 'ayy', 'byy', 'cyy', 'azz', 'bzz', 'czz'];
 // }
 
 // console.log(selectArr(arr));
+
+// Задача 71
+// Сортировка массива объектов
+// Дан массив объектов.
+// Выполните сортировку этого массива по заданному полю (по имени, возрасту или зарплате).
+
+// const arrObj = [
+//   {
+//     name: 'user3',
+//     age: 31,
+//     salary: 100,
+//   },
+//   {
+//     name: 'user1',
+//     age: 32,
+//     salary: 300,
+//   },
+//   {
+//     name: 'user2',
+//     age: 33,
+//     salary: 200,
+//   },
+// ]
+
+// function sortArray(arrObj, descript) {
+//   return arrObj.sort((a, b) => a[descript] - b[descript]);
+// }
+
+// console.log(sortArray(arrObj, "age"));
 
 //                                    ****************************************
 //                                    ****************************************
@@ -3893,17 +3922,62 @@ let arr = ['axx', 'bxx', 'cxx', 'ayy', 'byy', 'cyy', 'azz', 'bzz', 'czz'];
 // Apple => [1,5]
 // YoMama => [1,2,4,6]
 
-function vowelIndices(word) {
-  const vowel = ['a', 'e', 'i', 'o', 'u', 'y'];
-  let resArr = [];
-  for (let i = 0; i < word.length; i++) {
-    if (vowel.includes(word[i].toLowerCase())) {
-      resArr.push(i + 1);
-    }
-  }
-  return resArr;
-}
+// function vowelIndices(word) {
+//   const vowel = ['a', 'e', 'i', 'o', 'u', 'y'];
+//   let resArr = [];
+//   for (let i = 0; i < word.length; i++) {
+//     if (vowel.includes(word[i].toLowerCase())) {
+//       resArr.push(i + 1);
+//     }
+//   }
+//   return resArr;
+// }
 
-console.log(vowelIndices('Apple'));
+// console.log(vowelIndices('Apple'));
 
 //                                    ****************************************
+
+// Создайте функцию, которая принимает положительное целое число и возвращает следующее большее число, которое можно получить путем
+// перестановки его цифр
+
+// Пример:
+// 12 ==> 21
+// 513 ==> 531
+// 2017 ==> 2071
+
+// Если цифры не могут быть переставлены в большее число, верните -1
+// 9 ==> -1
+// 111 ==> -1
+// 531 ==> -1
+
+// function getPermutations(n) {
+//   let m = n;
+//   let arr = [];
+//   arr.push(m);
+//   while (m.toString().length === n.toString().length) {
+//     let sortedM = m
+//       .toString()
+//       .split('')
+//       .sort((a, b) => a - b)
+//       .join('');
+//     let sortedN = n
+//       .toString()
+//       .split('')
+//       .sort((a, b) => a - b)
+//       .join('');
+//     if (sortedM === sortedN) {
+//       ++m;
+//       arr.push(m - 1);
+//     } else {
+//       ++m;
+//     }
+//   }
+//   if (arr.slice(2, 3).length > 0 ) {
+//     return arr.slice(2, 3).toString();
+//   } else return '-1';
+// }
+
+// console.log(getPermutations(2017));
+
+//                                    ****************************************
+
