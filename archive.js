@@ -3556,6 +3556,63 @@
 
 // console.log(sortArray(arrObj, "age"));
 
+// Задача 73
+// Центральная ячейка таблицы
+// Дана прямоугольная HTML таблица с нечетным количеством рядов и колонок. По нажатию на кнопку выделите центральную ячейку этой таблицы.
+
+// const table = document.querySelector('.table');
+// const cells = table.getElementsByTagName('td');
+// const cellLength = cells.length;
+
+// function selectCell() {
+//   const cellN = Math.floor(cellLength / 2);
+//   const selectedCell = cells[cellN];
+//   selectedCell.style.background = 'yellow';
+// }
+
+// <body>
+//     <div class="container">
+//       <table class="table" border="1">
+//         <tr>
+//             <td>Ячейка 1</td>
+//             <td>Ячейка 2</td>
+//             <td>Ячейка 3</td>
+
+//         </tr>
+//         <tr>
+//             <td>Ячейка 6</td>
+//             <td>Ячейка 7</td>
+//             <td>Ячейка 8</td>
+
+//         </tr>
+//         <tr>
+//             <td>Ячейка 11</td>
+//             <td>Ячейка 12</td>
+//             <td>Ячейка 13</td>
+
+//         </tr>
+//         <tr>
+//             <td>Ячейка 16</td>
+//             <td>Ячейка 17</td>
+//             <td>Ячейка 18</td>
+
+//         </tr>
+//         <tr>
+//             <td>Ячейка 21</td>
+//             <td>Ячейка 22</td>
+//             <td>Ячейка 23</td>
+
+//         </tr>
+//     </table>
+
+//     <button class="button" onclick=selectCell()>средняя ячейка</button>
+    
+//     </div>
+
+//     <script src="./archive.js"></script>
+//   </body>
+
+
 //                                    ****************************************
 //                                    ****************************************
 //                                    ****************************************
