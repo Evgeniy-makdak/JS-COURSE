@@ -3981,3 +3981,34 @@
 
 //                                    ****************************************
 
+// Завершите функцию, которая возвращает true, если часть str1 символов можно переставить для соответствия str2,
+// и возвращает false в противном случае.
+
+// Примечания:
+
+// - Будут использоваться только строчные буквы (az). Никакие знаки препинания и цифры не будут включены
+// - Необходимо учитывать производительность
+
+// Пример:
+// scramble('rkqodlw', 'world') ==> True
+// scramble('cedewaraaossoqqyt', 'codewars') ==> True
+// scramble('katas', 'steak') ==> False
+
+// function scramble(str1, str2) {
+//   const str1Arr = str1.split('');
+//   const str2Arr = str2.split('');
+//   let summStr = [];
+//   for (let i = 0; i < str2Arr.length; i++) {
+//     for (let j = 0; j < str1Arr.length; j++) {
+//       if (str2Arr[i] === str1Arr[j]) {
+//         summStr.push(str2Arr[i]);
+//         break; 
+//       }
+//     }
+//   }
+//   return summStr.sort().join('') === str2Arr.sort().join('');
+// }
+
+// console.log(scramble('katas', 'steak')); 
+
+//                                    ****************************************
