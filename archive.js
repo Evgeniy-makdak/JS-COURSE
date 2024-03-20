@@ -4069,3 +4069,26 @@
 // console.log(scramble('katas', 'steak')); 
 
 //                                    ****************************************
+
+// Удалить первый и последний символ
+
+// Это довольно просто. Ваша цель — создать функцию, которая удаляет первый и последний символы строки. Вам дан один параметр — исходная строка.
+// Вам не нужно беспокоиться о строках, содержащих менее двух символов.
+
+// Пример: 
+// 'eloquent' ==> 'loquen'
+// 'country' ==> 'ountr'
+
+function removeChar (str){
+  if (str.length > 2) {
+    const arrStr = str.split('');
+    const [first, ...middle] = arrStr;
+    const newStr = middle.slice(0, -1);
+    return newStr.join('');
+  }
+}
+
+console.log(removeChar('eloquent'));
+
+//                                    ****************************************
+
