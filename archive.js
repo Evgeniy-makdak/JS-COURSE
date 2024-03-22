@@ -4079,16 +4079,41 @@
 // 'eloquent' ==> 'loquen'
 // 'country' ==> 'ountr'
 
-function removeChar (str){
-  if (str.length > 2) {
-    const arrStr = str.split('');
-    const [first, ...middle] = arrStr;
-    const newStr = middle.slice(0, -1);
-    return newStr.join('');
-  }
-}
+// function removeChar (str){
+//   if (str.length > 2) {
+//     const arrStr = str.split('');
+//     const [first, ...middle] = arrStr;
+//     const newStr = middle.slice(0, -1);
+//     return newStr.join('');
+//   }
+// }
 
-console.log(removeChar('eloquent'));
+// console.log(removeChar('eloquent'));
 
 //                                    ****************************************
 
+// Подсчитайте символы в вашей строке
+// Основная идея заключается в подсчете всех встречающихся символов в строке
+// Что делать, если строка пуста? Тогда результатом должен быть пустой литерал объекта {}.
+
+// Пример: 
+// '' ==> {}
+// 'a' ==> {'a': 1}
+// 'aba' ==>  {'a': 2, 'b': 1}
+// 'ABC' ==>  {'A': 1, 'B': 1, 'C': 1}
+
+// function count(string) {
+//   let countOfSymbols = string.split('').reduce((acc, elem) => {
+//     if (elem in acc) {
+//       acc[elem]++
+//     } else {
+//       acc[elem] = 1;
+//     }
+//     return acc;
+//   }, {});
+//   return countOfSymbols;
+// };
+
+// console.log(count(''));
+
+//                                    ****************************************
