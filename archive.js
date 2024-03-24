@@ -3606,12 +3606,11 @@
 //     </table>
 
 //     <button class="button" onclick=selectCell()>средняя ячейка</button>
-    
+
 //     </div>
 
 //     <script src="./archive.js"></script>
 //   </body>
-
 
 //                                    ****************************************
 //                                    ****************************************
@@ -4059,14 +4058,14 @@
 //     for (let j = 0; j < str1Arr.length; j++) {
 //       if (str2Arr[i] === str1Arr[j]) {
 //         summStr.push(str2Arr[i]);
-//         break; 
+//         break;
 //       }
 //     }
 //   }
 //   return summStr.sort().join('') === str2Arr.sort().join('');
 // }
 
-// console.log(scramble('katas', 'steak')); 
+// console.log(scramble('katas', 'steak'));
 
 //                                    ****************************************
 
@@ -4075,7 +4074,7 @@
 // Это довольно просто. Ваша цель — создать функцию, которая удаляет первый и последний символы строки. Вам дан один параметр — исходная строка.
 // Вам не нужно беспокоиться о строках, содержащих менее двух символов.
 
-// Пример: 
+// Пример:
 // 'eloquent' ==> 'loquen'
 // 'country' ==> 'ountr'
 
@@ -4096,7 +4095,7 @@
 // Основная идея заключается в подсчете всех встречающихся символов в строке
 // Что делать, если строка пуста? Тогда результатом должен быть пустой литерал объекта {}.
 
-// Пример: 
+// Пример:
 // '' ==> {}
 // 'a' ==> {'a': 1}
 // 'aba' ==>  {'a': 2, 'b': 1}
@@ -4129,12 +4128,34 @@
 // Input: 145263 Output: 654321
 // Input: 123456789 Output: 987654321
 
-
 // function descendingOrder (n){
 //   const sortN = (n.toString().split('').sort((a, b) => b - a)).join('');
 //   return sortN;
 // };
 
 // console.log(descendingOrder(42145));
+
+//                                    ****************************************
+
+// Return a new array with the strings filtered out
+// В этой kata вы создадите функцию, которая берёт список
+// неотрицательных целых чисел и строк и возвращает новый
+// список с отфильтрованными строками.
+// Пример:
+// filter_list([1, 2, 'a', 'b']) == [1, 2]
+// filter_list([1, 'a', 'b', 0, 15]) == [1, 0, 15]
+// filter_list([1, 2, 'aasf', '1', '123', 123]) == [1, 2, 123]
+
+// function filter_list(l) {
+//   let new_list = [];
+//   for (let i = 0; i < l.length; i++) {
+//     if (typeof l[i] === 'number') {
+//       new_list.push(l[i]);
+//     };
+//   };
+//   return new_list;
+// };
+
+// console.log(filter_list([1, 'a', 'b', 0, 15]));
 
 //                                    ****************************************
